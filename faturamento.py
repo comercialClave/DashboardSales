@@ -3,6 +3,7 @@ import pandas as pd
 import plotly.express as px
 import calendar
 from datetime import datetime
+from autenticacao import login
 
 st.set_page_config(
     page_title="Dashboard Comercial",
@@ -10,6 +11,9 @@ st.set_page_config(
     layout="wide"
 )
 
+if not login():
+    st.stop()
+    
 st.title("📊 Faturamento por Mesa")
 
 aba_resumo, aba_grafico, aba_analise = st.tabs([
