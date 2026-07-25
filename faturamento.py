@@ -19,7 +19,8 @@ aba_resumo, aba_grafico, aba_analise = st.tabs([
 ])
 
 
-CAMINHO = r"C:\Users\layza\OneDrive\Documentos\Desenvolvimento\Python\app VBC mesa\Base de Faturamento Clave.xlsx"
+#CAMINHO = r"C:\Users\layza\OneDrive\Documentos\Desenvolvimento\Python\app VBC mesa\Base de Faturamento Clave.xlsx"
+CAMINHO = "Base de Faturamento Clave.xlsx"
 ABA = 0
 
 @st.cache_data
