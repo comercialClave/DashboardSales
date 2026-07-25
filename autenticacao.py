@@ -21,6 +21,9 @@ def login():
         type="password"
     )
 
+    col1, col2, col3 = st.columns([1, 2, 1]) # Cria colunas para centralizar a imagem
+    with col2:
+        st.image("logo.jpg", use_container_width=True)
 
     if st.button("Entrar"):
 
