@@ -16,9 +16,6 @@ if not login():
 
 st.logo("logo.jpg")
 
-"""st.sidebar.image("logo.jpg", use_container_width=True)
-st.sidebar.divider()""" 
- 
 st.title("📊 Faturamento por Mesa")
 
 aba_resumo, aba_grafico, aba_analise = st.tabs([
