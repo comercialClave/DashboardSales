@@ -16,8 +16,8 @@ if not login():
 
 st.logo("logo.jpg")
 
-st.sidebar.image("logo.jpg", use_container_width=True)
-st.sidebar.divider() 
+"""st.sidebar.image("logo.jpg", use_container_width=True)
+st.sidebar.divider()""" 
  
 st.title("📊 Faturamento por Mesa")
 
