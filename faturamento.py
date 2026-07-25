@@ -72,6 +72,13 @@ mesa = st.sidebar.selectbox(
     ["Todas"] + mesas
 )
 
+linhas = sorted(df["Linha"].dropna().unique())
+
+linha = st.sidebar.selectbox(
+    "Linha",
+    ["Todas"] + linhas
+)
+
 df = df[
     (df["DATA VISITA"] >= pd.to_datetime(data_inicial))
     &
@@ -80,6 +87,8 @@ df = df[
 
 if mesa != "Todas":
     df = df[df["Mesa"] == mesa]
+
+
 
 hoje = datetime.today()
 
