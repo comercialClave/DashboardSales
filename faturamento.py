@@ -88,7 +88,8 @@ df = df[
 if mesa != "Todas":
     df = df[df["Mesa"] == mesa]
 
-
+if linha != "Todas":
+    df = df[df["Linha"] == linha]
 
 hoje = datetime.today()
 
